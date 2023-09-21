@@ -31,7 +31,14 @@ body {
 #header {
   background-color: #000;
 }
-
+.img h1 {
+  font-family: 'wix madefor display', sans-serif;
+  color: #fff;
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.372);
+}
 #header > div {
   display: flex;
   justify-content: space-between;
@@ -72,7 +79,22 @@ nav ul li a:focus {
   display: flex;
   align-items: center;
 }
-
+#welcome h2 {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  padding-right: 23em;
+  max-width: 50%;
+}
+.welcome h2 {
+  color: #fff;
+  font-family: "wix madefor display", sans-serif;
+  font-size: 3.5rem;
+}
+.flavours h2 {
+  font-family: "wix madefor display", sans-serif;
+  font-size: 3.5rem;
+}
 #intro {
   background-color: #7251b5;
 }
@@ -107,6 +129,12 @@ nav ul li a:focus {
   margin: 0 auto;
   text-align: center;
 }
+.team h2 {
+  font-size: 3.5em;
+  font-family: "wix madefor display", sans-serif;
+  font-size: 3.5rem;
+  color: #fff;
+}
 
 .team-grid {
   display: grid;
@@ -130,6 +158,7 @@ nav ul li a:focus {
 
 .team-grid h3 {
   text-transform: uppercase;
+  font-family: "wix madefor display", sans-serif;
   margin-bottom: 0;
 }
 
@@ -140,5 +169,5 @@ nav ul li a:focus {
 footer {
   background-color: black;
   text-align: center;
-  padding: 1em o;
+  padding: 1em 0;
 }
