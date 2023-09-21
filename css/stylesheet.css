@@ -11,10 +11,6 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 1.5em;
-  padding-right: 0;
-  padding-bottom: 1.5em;
-  padding-left: 0;
 }
 
 /* header-come back to this next class */
@@ -22,10 +18,30 @@ body {
 #company-name {
   color: #DEC9E9;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+#intro, 
+#fan-fav,
+#team {
+  padding: 4em 0;
 }
 
 #header {
   background-color: #000;
+}
+#header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding-left: 1.25em;
 }
 
 nav ul li a:link,
@@ -47,93 +63,73 @@ nav ul li a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-header {
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  color: #fff;
-}
-header ul {
-  display: flex;
 }
 
-.ice-cream-cones.jpg {
-  display: block;
-  margin: 0 auto;
+#intro {
+  background-color: #7251B5;
 }
-
-img {
-  width: 100%;
+#intro p {
+  max-width: 50%;
 }
-
-
-
-nav ul {
+#fan-fav {
+  background-color: #000;
+  color: #DEC9E9;
+}
+#fan-fav ol{
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#fan-fav ol li {
+  width: 50%;
+  padding-right: 15%;
 }
 
-nav {
-  text-align: left;
+.team-grid{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ margin-top: 2.5em;
+ gap: 1em;
 }
 
-nav ul li {
-  display: inline;
-}
-nav a:link {
-  padding-top: .5em;
-  padding-right: .75em;
-  padding-bottom: .5em;
-  padding-left: .75em;
-  border-radius: 8px;
-}
-
-nav a:link, ul a:visited {
-  color: #fff;
-  border: 2px solid 8px;
-  text-decoration: none; 
-}
-
-nav a:hover, ul a:focus {
-  background-color: #fff;
-  color:#000;
-  border: 2px solid #000;
-}
-div > h1 {
-width: 75%;
-padding-top: .5em;
-padding-right: .5em;
-padding-bottom: .5em;
-padding-left: .5em;
-margin: 0 auto;
-color: #fff;
-text-align: center;
-font-size: 2rem;
-text-shadow: 2px 2px #000(0,0,0,.8);
-}
-.welcome {
+#team {
   background-color: #7251B5;
-  color:#fff;
 }
-.flavours {
-  color: #DEC9E9;
-  
-}
-.favourites {
-background-color:#000;
-color: #fff;
-}
+#team h2,
+.team-intro {
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
 
-.team {
-  background-color: #7251B5;
-  color:#fff;
 }
-
+.team-grid article {
+  background-color: #6647a6;
+  border-radius: 20px;
+  padding: 2em 0;
+  text-align: center;
+}
+.team-grid article img {
+  width: 80px;
+  border-radius: 50%;
+  filter: grayscale(100);
+}
+.team-grid h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.team-grid article p{
+  margin-top: 0;
+}
 
 footer {
   background-color: #000;
+  text-align: center;
   color: #fff;
+  padding: 1em;
 }
 
 footer .wrapper {
